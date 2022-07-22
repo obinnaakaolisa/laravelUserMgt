@@ -38,7 +38,7 @@
                             <h4 class="my-3 text-secondary">{{$user->phone}}</h4>
                             <a href="/users/{{$user->id}}/edit" class="my-3 btn btn-primary d-inline-block">Edit</a>
                             <form action="/users/{{$user->id}}" method="post" class="d-inline">
-                                @method('PUT')
+                                @method('DELETE')
                                 @csrf
                                 <button type="submit" class=" ms-3 btn btn-danger d-inline-block">Delete</button>
                             </form>
